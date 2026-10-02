@@ -1,3 +1,10 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <vector>
+#include<iostream>
+
+using namespace std;
+
 bool is_primitive(int base, int mod) {
     int exp = 2;
     int r = base * base;
@@ -17,10 +24,13 @@ vector<int> primitive_root(int mod) {
 
 
 int main(void) {
-    if(is_primitive(3,5)) {
+    if(is_primitive(3,22)) {
         printf("good");
     }
     if(is_primitive(3,7)) {
         printf("good");
     }
+    for(int i : primitive_root(29))
+        cout << i << ',';
+    cout << endl;
 }

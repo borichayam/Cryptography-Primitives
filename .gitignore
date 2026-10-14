@@ -1,0 +1,20 @@
+
+# Windows 실행 파일
+*.exe
+
+# C/C++ 컴파일 중간 파일
+*.o
+*.obj
+
+# 기타 빌드 결과물
+*.out
+*.a
+*.so
+*.dll
+
+# 빌드 디렉터리
+build/
+bin/
+
+# 현재 Linux 실행 파일
+/practice/helloworld
